@@ -1,0 +1,204 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta charset= "utf-8" />
+    <title> Florian Goldbach </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--Fix for the loader to work in Firefox-->
+    <script>0</script>
+
+    <div class="loader">
+        <img src="gifs/loading.gif" alt="loading..."/>
+    </div>
+
+    <div class="container">
+        <div class="navWrapper">
+            <div class="leftSide">
+                <div class="navLinkWrapper activeNavLink">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="navLinkWrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="navLinkWrapper">
+                    <a href="downloads.html">Downloads</a>
+                </div>
+            </div>
+            
+            <div class="rightSide">
+                <div class="brand">
+                    <div>FLORIAN GOLDBACH</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentWrapper">
+            <div class="portfolioItemsWrapper">
+
+                <div class="portfolioItemWrapper">
+                    <div class="portfolioImgBackground" style="background-image:url(images/portfolioImg1.jpg)"></div>
+                    
+                    <div class="imgTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="logos/play-button-60.png">
+                        </div>
+
+                        <div class="subtitleLink">
+                            <a href="coming-soon.html">I believe in making studying how to code more accessible</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolioItemWrapper">
+                    <div class="portfolioImgBackground" style="background-image:url(images/portfolioImg2.jpg)"></div>
+                    
+                    <div class="imgTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="logos/python-50.png">
+                        </div>
+
+                        <div class="subtitleLink">
+                            <a href="coming-soon.html">Python is an easily graspable programming language and a great starting point</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolioItemWrapper">
+                    <div class="portfolioImgBackground" style="background-image:url(images/portfolioImg3.jpg)"></div>
+                    
+                    <div class="imgTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="logos/console-50.png">
+                        </div>
+                        
+                        <div class="subtitleLink">
+                            <a href="coming-soon.html">I created a small console game in python as a passion project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolioItemWrapper">
+                    <div class="portfolioImgBackground" style="background-image:url(images/portfolioImg4.jpg)"></div>
+                    
+                    <div class="imgTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="logos/android-60.png">
+                        </div>
+                        
+                        <div class="subtitleLink">
+                            <a href="coming-soon.html">A weather app that interacts with an api, created in android studio</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolioItemWrapper">
+                    <div class="portfolioImgBackground" style="background-image:url(images/portfolioImg5.jpg)"></div>
+                    
+                    <div class="imgTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="logos/puzzle-100.png">
+                        </div>
+                        
+                        <div class="subtitleLink">
+                            <a href="coming-soon.html">I like solving complex programming problems trying to become aware of the basics needed for doing so</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolioItemWrapper">
+                    <div class="portfolioImgBackground" style="background-image:url(images/portfolioImg6.jpg)"></div>
+                    
+                    <div class="imgTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="logos/haskell-50.png">
+                        </div>
+                        
+                        <div class="subtitleLink">
+                            <a href="coming-soon.html">During my studies I was forced to learn sorting algorithms in Haskell</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolioItemWrapper">
+                    <div class="portfolioImgBackground" style="background-image:url(images/portfolioImg7.jpg)"></div>
+                    
+                    <div class="imgTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="logos/assembly-line-64.png">
+                        </div>
+                        
+                        <div class="subtitleLink">
+                            <a href="coming-soon.html">At the FU (Freie Universität) we build a couple of programms in NASM Assembly language</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolioItemWrapper">
+                    <div class="portfolioImgBackground" style="background-image:url(images/portfolioImg8.jpg)"></div>
+                    
+                    <div class="imgTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="logos/java-bean-50.png">
+                        </div>
+                        
+                        <div class="subtitleLink">
+                            <a href="coming-soon.html">One of the first tutorials I completed was about Java</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolioItemWrapper">
+                    <div class="portfolioImgBackground" style="background-image:url(images/portfolioImg9.jpg)"></div>
+                    
+                    <div class="imgTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="logos/github-60.png">
+                        </div>
+                        
+                        <div class="subtitleLink">
+                            <a href="https://github.com/Florgol">Find a collection of other projects in my github repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="push"></div>
+    </div>
+    
+    <footer>
+        <div class="footerWrapper">
+            <a href="https://icons8.com">Icons by Icons8</a>
+        </div>
+    </footer>
+</body>
+<script>
+    
+    window.addEventListener('load', function(){
+        const loader = document.querySelector(".loader")
+        
+        setTimeout(() => {loader.className += " hidden";}, 500); //class will be "loader hidden"
+    })
+
+    const portfolioItems = document.querySelectorAll('.portfolioItemWrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('imgDarken')
+        })
+    })
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('imgDarken')
+        })
+    })
+
+</script>
+</html>
