@@ -24,3 +24,5 @@ TODOs:
 	- image
 	- split column layout
 	- content
+
+5. Later added footer and loader
